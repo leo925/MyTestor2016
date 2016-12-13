@@ -4,6 +4,7 @@
         
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+         
         <StackPanel IsEnabled="True">
             <TabControl ItemsSource="{Binding }">
                 <TabItem Header="sdf">

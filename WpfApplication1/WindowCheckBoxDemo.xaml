@@ -1,7 +1,7 @@
 ﻿<Window x:Class="WpfApplication1.WindowCheckBoxDemo"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="WindowCheckBoxDemo" Height="300" Width="300">
+        Title="WindowCheckBoxDemo" Height="300" Width="500">
     <Window.Resources>
         <ResourceDictionary>
             <Color x:Key="CheckedOnColor">#00ff00</Color>
@@ -90,6 +90,19 @@
         
     </Window.Resources>
     <Grid>
-        <CheckBox IsChecked="True" Style="{StaticResource SliderCheckBox}" Foreground="Red" Background="Green" ></CheckBox>
+        <StackPanel>
+            <StackPanel.Resources>
+                <Geometry x:Key="RefreshFigure">F1M13.641,2.35C12.191,0.9 10.201,0 7.991,0 3.571,0 0,3.58 0,8 0,12.42 3.571,16 7.991,16 11.721,16 14.83,13.45 15.721,10L13.641,10C12.821,12.33 10.6,14 7.991,14 4.68,14 1.991,11.31 1.991,8 1.991,4.69 4.68,2 7.991,2 9.651,2 11.131,2.69 12.211,3.78L8.991,7 15.991,7 15.991,0z</Geometry>
+            </StackPanel.Resources>
+
+            <CheckBox IsChecked="True" Style="{StaticResource SliderCheckBox}" Foreground="Red" Background="Green" ></CheckBox>
+            <Grid Width="400" Height="40" >
+                <TextBlock Text="sdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfd"
+                           TextWrapping="Wrap" TextTrimming="WordEllipsis"
+                           ToolTip="{Binding RelativeSource={RelativeSource Self},Path=Text}">
+                   
+                </TextBlock>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>

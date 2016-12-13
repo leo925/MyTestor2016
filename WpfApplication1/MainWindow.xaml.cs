@@ -57,7 +57,7 @@ namespace WpfApplication1
             Regex rex2=new Regex(".{2}00[A-z1-9]{1,}");
             string input2="ad00A0";
             Match m2=rex2.Match(input2);
-            if( m2.Success )
+            if (m2.Success)
             {
 
             }

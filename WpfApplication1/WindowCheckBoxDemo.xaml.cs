@@ -22,6 +22,9 @@ namespace WpfApplication1
         public WindowCheckBoxDemo()
         {
             InitializeComponent();
+            var date = DateTime.Now;
+            var month = date.ToString("MMM");
+            Console.WriteLine(month);
         }
     }
 }

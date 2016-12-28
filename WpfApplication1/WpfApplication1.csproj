@@ -60,6 +60,9 @@
     <Compile Include="UCReadStationLiveEventScreen.xaml.cs">
       <DependentUpon>UCReadStationLiveEventScreen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\RangeSlider.xaml.cs">
+      <DependentUpon>RangeSlider.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\DistanceResultViewModel.cs" />
     <Compile Include="WindowAttachedPropertyForScrollIntoView.xaml.cs">
       <DependentUpon>WindowAttachedPropertyForScrollIntoView.xaml</DependentUpon>
@@ -72,6 +75,12 @@
     </Compile>
     <Compile Include="WindowGridBringIntoView.xaml.cs">
       <DependentUpon>WindowGridBringIntoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowRangeSlider.xaml.cs">
+      <DependentUpon>WindowRangeSlider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowScroll.xaml.cs">
+      <DependentUpon>WindowScroll.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowTabControl.xaml.cs">
       <DependentUpon>WindowTabControl.xaml</DependentUpon>
@@ -98,6 +107,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControl\RangeSlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowAttachedPropertyForScrollIntoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -111,6 +124,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowGridBringIntoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowRangeSlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowScroll.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,7 +182,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UserControl\" />
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

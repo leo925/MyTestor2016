@@ -4,7 +4,7 @@
         Title="WindowCheckBoxDemo" Height="300" Width="500">
     <Window.Resources>
         <ResourceDictionary>
-            <Color x:Key="CheckedOnColor">#00ff00</Color>
+            <Color x:Key="CheckedOnColor">#009dda</Color>
             <Color x:Key="WhiteColor">#2b313b</Color>
             <Style x:Key="CheckRadioFocusVisual">
                 <Setter Property="Control.Template">
@@ -38,7 +38,7 @@
                             </ControlTemplate.Resources>
                             <BulletDecorator Background="Transparent" SnapsToDevicePixels="true">
                                 <BulletDecorator.Bullet>
-                                    <Border x:Name="ForegroundPanel" BorderThickness="1" Width="45" Height="25" CornerRadius="10">
+                                    <Border x:Name="ForegroundPanel" BorderThickness="1" Width="145" Height="25" CornerRadius="10">
                                         <Canvas>
                                             <Border Background="White" x:Name="CheckFlag" Margin="3" CornerRadius="10" VerticalAlignment="Center" BorderThickness="1" Width="19" Height="18" RenderTransformOrigin="0.5,0.5">
                                                 <Border.RenderTransform>
@@ -67,14 +67,14 @@
                                     <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
                                 </Trigger>
                                 <Trigger Property="IsChecked" Value="True">
-                                    <Setter TargetName="ForegroundPanel" Property="Background" Value="#00FF00" />
+                                    <Setter TargetName="ForegroundPanel" Property="Background" Value="#009dda" />
                                     <Trigger.EnterActions>
                                         <BeginStoryboard x:Name="BeginStoryboardCheckedTrue" Storyboard="{StaticResource StoryboardIsChecked}" />
                                         <RemoveStoryboard BeginStoryboardName="BeginStoryboardCheckedFalse" />
                                     </Trigger.EnterActions>
                                 </Trigger>
                                 <Trigger Property="IsChecked" Value="False">
-                                    <Setter TargetName="ForegroundPanel" Property="Background" Value="#00FF00" />
+                                    <Setter TargetName="ForegroundPanel" Property="Background" Value="#009dda" />
                                     <Trigger.EnterActions>
                                         <BeginStoryboard x:Name="BeginStoryboardCheckedFalse" Storyboard="{StaticResource StoryboardIsCheckedOff}" />
                                         <RemoveStoryboard BeginStoryboardName="BeginStoryboardCheckedTrue" />
@@ -94,15 +94,56 @@
             <StackPanel.Resources>
                 <Geometry x:Key="RefreshFigure">F1M13.641,2.35C12.191,0.9 10.201,0 7.991,0 3.571,0 0,3.58 0,8 0,12.42 3.571,16 7.991,16 11.721,16 14.83,13.45 15.721,10L13.641,10C12.821,12.33 10.6,14 7.991,14 4.68,14 1.991,11.31 1.991,8 1.991,4.69 4.68,2 7.991,2 9.651,2 11.131,2.69 12.211,3.78L8.991,7 15.991,7 15.991,0z</Geometry>
             </StackPanel.Resources>
+            <Grid>
 
-            <CheckBox IsChecked="True" Style="{StaticResource SliderCheckBox}" Foreground="Red" Background="Green" ></CheckBox>
-            <Grid Width="400" Height="40" >
-                <TextBlock Text="sdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfdsdfdsfdfd"
-                           TextWrapping="Wrap" TextTrimming="WordEllipsis"
-                           ToolTip="{Binding RelativeSource={RelativeSource Self},Path=Text}">
-                   
-                </TextBlock>
+
+                <CheckBox IsChecked="True" HorizontalAlignment="Center" Style="{StaticResource SliderCheckBox}" Foreground="#009dda" Background="#009dda" ></CheckBox>
             </Grid>
+            <UniformGrid Columns="2">
+                <TextBlock Text="12"></TextBlock>
+                <TextBlock Text="12"></TextBlock>
+                <TextBlock Text="12"></TextBlock>
+                <TextBlock Text="12"></TextBlock>
+                <TextBlock Text="12"></TextBlock>
+                <TextBlock Text="12"></TextBlock>
+                <TextBlock Text="12"></TextBlock>
+                <TextBlock Text="12"></TextBlock>
+                <TextBlock Text="12"></TextBlock>
+            </UniformGrid>
+            
+            <ListBox>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid></UniformGrid>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBoxItem Content="Visual Basic" Width="80"/>
+
+                <ListBoxItem Content="Silverlight" Width="80"/>
+
+                <ListBoxItem Content="ASP.NET" Width="80"/>
+            </ListBox>
+            <ListView>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid></UniformGrid>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid></Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListViewItem Content="dsfdsf"></ListViewItem>
+                <ListViewItem Content="dsfdsf"></ListViewItem>
+                <ListViewItem Content="dsfdsf"></ListViewItem>
+                <ListViewItem Content="dsfdsf"></ListViewItem>
+                <ListViewItem Content="dsfdsf"></ListViewItem>
+                <ListViewItem Content="dsfdsf"></ListViewItem>
+                <ListViewItem Content="dsfdsf"></ListViewItem>
+            </ListView>
+
+            <ProgressBar Background="#2b313b" Foreground="#29b0e6" Maximum="100" Minimum="0" Value="20" Height="20"></ProgressBar>
         </StackPanel>
     </Grid>
 </Window>

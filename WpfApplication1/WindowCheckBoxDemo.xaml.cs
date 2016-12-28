@@ -25,6 +25,12 @@ namespace WpfApplication1
             var date = DateTime.Now;
             var month = date.ToString("MMM");
             Console.WriteLine(month);
+
+            Grid grd = new Grid();
+            grd.ColumnDefinitions.Add(new ColumnDefinition()
+            {
+                 Width=new GridLength (1.0, GridUnitType.Star) 
+            });
         }
     }
 }

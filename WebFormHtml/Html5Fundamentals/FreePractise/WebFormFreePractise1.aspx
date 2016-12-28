@@ -8,7 +8,7 @@
     <script type="text/javascript" src="../../Scripts/jquery-1.8.2.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" method="post">
     <div>
     <input type="color" />
         <input id="colors-box" list="colorList" />
@@ -21,6 +21,17 @@
         <input type="number" max="50" min="5" step="2" />
 
         <input type="text" pattern="[a-zA-Z]{5,}" placeholder="username" maxlength="30" required />
+
+        <div>
+            <label>date:</label>
+            <input type="date" autofocus />
+        </div>
+        <div>
+            <input type="submit" value="ok" />
+        </div>
+        <div>
+            <input type="search" />
+        </div>
     </div>
     </form>
 </body>

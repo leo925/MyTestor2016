@@ -202,6 +202,7 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="Global.asax" />
     <Content Include="JavascriptObjectsAndPrototypes\WebFormObjectBasic.aspx" />
+    <Content Include="JqueryFundamentals\WebFormAjax.aspx" />
     <Content Include="JqueryFundamentals\WebFormSelector.aspx" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
@@ -298,6 +299,13 @@
     </Compile>
     <Compile Include="JavascriptObjectsAndPrototypes\WebFormObjectBasic.aspx.designer.cs">
       <DependentUpon>WebFormObjectBasic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JqueryFundamentals\WebFormAjax.aspx.cs">
+      <DependentUpon>WebFormAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JqueryFundamentals\WebFormAjax.aspx.designer.cs">
+      <DependentUpon>WebFormAjax.aspx</DependentUpon>
     </Compile>
     <Compile Include="JqueryFundamentals\WebFormSelector.aspx.cs">
       <DependentUpon>WebFormSelector.aspx</DependentUpon>

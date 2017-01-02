@@ -17,7 +17,7 @@ namespace WebFormHtml.Account
             var returnUrl = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
             if (!String.IsNullOrEmpty(returnUrl))
             {
-                RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
+                RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;//
             }
         }
     }

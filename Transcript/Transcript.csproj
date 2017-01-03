@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>668a286e-f5c4-466b-a1ca-f62687b4d7d7</ProjectGuid>
+    <ProjectGuid>{BC1D0505-ABEA-455D-AD1C-104D0A83C2BE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Transcript</RootNamespace>
@@ -33,7 +33,13 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="doc\An Introduction to CSS.docx" />
+    <None Include="doc\aspmvc4 fundamental The ASP.NET WebAPI.docx" />
+    <None Include="doc\get started with entity framework 5.docx" />
+    <None Include="doc\jQuery Fundamentals.docx" />
+    <None Include="English recite\recite_Jan3.docx" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

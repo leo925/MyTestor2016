@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BC1D0505-ABEA-455D-AD1C-104D0A83C2BE}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Transcript</RootNamespace>
     <AssemblyName>Transcript</AssemblyName>
@@ -31,10 +31,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="doc\An Introduction to CSS.docx" />
     <None Include="doc\aspmvc4 fundamental The ASP.NET WebAPI.docx" />
+    <None Include="doc\Building Applications with ASP.NET MVC 4.docx" />
     <None Include="doc\get started with entity framework 5.docx" />
     <None Include="doc\jQuery Fundamentals.docx" />
     <None Include="English recite\recite_Jan3.docx" />

@@ -12,5 +12,8 @@
     <Grid>
         <ContentControl Content="{Binding VM}" Width="180" Height="30" Background="Red"></ContentControl>
         <!--<Button Margin="20,200" Width="100" Height="30" Content="click" Click="Button_Click" ></Button>-->
+
+
+        <TextBox Width="200" Height="30" Text="12" HorizontalContentAlignment="Center"></TextBox>
     </Grid>
 </Window>

@@ -24,9 +24,21 @@ namespace WpfApplication1
         {
             InitializeComponent();
             this.DataContext = this;
+            M();
              
         }
 
+        void M()
+        {
+            System.Diagnostics.StackTrace st = new System.Diagnostics.StackTrace();
+            var frs = st.GetFrames();
+            foreach (var f in frs)
+            {
+
+
+            }
+        }
+            
 
 
         private RangeSliderViewModel vm;

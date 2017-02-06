@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C53597BC-9E1D-4740-9A01-55408A1F3F5B}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WpfApplication1</RootNamespace>
     <AssemblyName>WpfApplication1</AssemblyName>
@@ -95,17 +95,26 @@
     <Compile Include="WindowGridBringIntoView.xaml.cs">
       <DependentUpon>WindowGridBringIntoView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowRaceClock_Timer.xaml.cs">
+      <DependentUpon>WindowRaceClock_Timer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowRangeSlider.xaml.cs">
       <DependentUpon>WindowRangeSlider.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowScroll.xaml.cs">
       <DependentUpon>WindowScroll.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowScrollThumbSize.xaml.cs">
+      <DependentUpon>WindowScrollThumbSize.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowTabControl.xaml.cs">
       <DependentUpon>WindowTabControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowTabControlBinding.xaml.cs">
       <DependentUpon>WindowTabControlBinding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowThread.xaml.cs">
+      <DependentUpon>WindowThread.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowToolTip.xaml.cs">
       <DependentUpon>WindowToolTip.xaml</DependentUpon>
@@ -146,6 +155,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowRaceClock_Timer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowRangeSlider.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -154,11 +167,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowScrollThumbSize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowTabControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowTabControlBinding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowThread.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

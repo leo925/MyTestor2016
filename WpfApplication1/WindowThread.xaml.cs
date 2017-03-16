@@ -26,7 +26,9 @@ namespace WpfApplication1
             int m1, m2;
             ThreadPool.GetMinThreads(out m1, out m2);
             ThreadPool.SetMinThreads(300, 400);
-            ThreadPool.GetMinThreads(out m1, out m2);
+            ThreadPool.GetMinThreads(out m1, out m2);  
+            
+               
         }
         Timer t;
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -43,5 +45,44 @@ namespace WpfApplication1
         {
             this.t.Change(5, Timeout.Infinite);
         }
+    }
+
+
+
+    public class SettingsDisplayViewModel
+    {
+        int Type;
+        List<SettingDisplayItemViewModel> list;
+        void m()
+        {
+
+        }
+    }
+
+    public class SettingDisplayItemViewModel
+    {
+        public int Type;
+        string distanceName;
+        List<WaveSettingItemViewModel> listwave;
+
+        //here, have another view mdoel to represents the displaying data
+
+        distanceSettingItemViewModel distanceViewModel;
+
+        
+
+    }
+
+    class WaveSettingsViewModel
+    {
+        List<WaveSettingItemViewModel> list;
+    }
+
+    class WaveSettingItemViewModel
+    {
+    }
+
+    class distanceSettingItemViewModel
+    {
     }
 }

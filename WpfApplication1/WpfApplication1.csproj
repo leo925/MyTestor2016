@@ -95,6 +95,9 @@
     <Compile Include="WindowGridBringIntoView.xaml.cs">
       <DependentUpon>WindowGridBringIntoView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowOOP.xaml.cs">
+      <DependentUpon>WindowOOP.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowRaceClock_Timer.xaml.cs">
       <DependentUpon>WindowRaceClock_Timer.xaml</DependentUpon>
     </Compile>
@@ -118,6 +121,9 @@
     </Compile>
     <Compile Include="WindowToolTip.xaml.cs">
       <DependentUpon>WindowToolTip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowUniform.xaml.cs">
+      <DependentUpon>WindowUniform.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -155,6 +161,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowOOP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowRaceClock_Timer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -184,6 +194,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowToolTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowUniform.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

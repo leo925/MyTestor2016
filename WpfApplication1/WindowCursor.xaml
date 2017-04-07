@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApplication1.WindowCursor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d" 
+        xmlns:wins="clr-namespace:System.Windows"
+        Title="WindowCursor" Height="300" Width="300">
+    <Window.Resources>
+        <ResourceDictionary>
+        
+        </ResourceDictionary>
+        
+    </Window.Resources>
+    <Grid Background="Black">
+        <StackPanel>
+
+            <!--<Image Source="pic\battery_unknown.gif" Width="24" Height="24"></Image>-->
+            <!--<local:ImageGifView ImgSource="pack://application:,,,/WpfApplication1;component/pic/battery_unknown1.gif" 
+                                Width="24" Height="24" Margin="0,10"></local:ImageGifView>-->
+            <!--pack://application:,,,/WindowCursor.xaml-->
+            <local:ImageGifView Source="pack://application:,,,/WpfApplication1;component/pic/1.gif" Width="24" Height="24" Margin="0,10"></local:ImageGifView>
+
+            <MediaElement LoadedBehavior="Play" Source="pack://application:,,,/WpfApplication1;component/pic/1.gif" Stretch="Fill" ></MediaElement>
+            
+            
+            <!--<Image Source="pack://application:,,,/WpfApplication1;component/pic/battery_unknown1.gif" Width="30" Height="30"></Image>-->
+        </StackPanel>
+
+    </Grid>
+</Window>

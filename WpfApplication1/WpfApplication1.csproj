@@ -86,11 +86,17 @@
     <Compile Include="WindowAttachedPropertyForScrollIntoView.xaml.cs">
       <DependentUpon>WindowAttachedPropertyForScrollIntoView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowBindingBaseClassWithPropertyInDerived.xaml.cs">
+      <DependentUpon>WindowBindingBaseClassWithPropertyInDerived.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowCheckBox.xaml.cs">
       <DependentUpon>WindowCheckBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowCheckBoxDemo.xaml.cs">
       <DependentUpon>WindowCheckBoxDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowCursor.xaml.cs">
+      <DependentUpon>WindowCursor.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowGridBringIntoView.xaml.cs">
       <DependentUpon>WindowGridBringIntoView.xaml</DependentUpon>
@@ -149,11 +155,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowBindingBaseClassWithPropertyInDerived.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowCheckBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowCheckBoxDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowCursor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -238,6 +252,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cursors\move_im.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\down1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\1.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pic\5-140FGZ246.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\battery_unknown1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

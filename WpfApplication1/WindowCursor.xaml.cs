@@ -67,7 +67,7 @@ namespace WpfApplication1
         {
             string str = @"E:\git\MyTestor2016\WpfApplication1\pic\battery_unknown5.gif";
             
-            
+           
             this.Width = 24;
             this.Height = 24;
             this.LoadedBehavior = MediaState.Play;

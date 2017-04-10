@@ -35,6 +35,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <None Include="7000\7000MK.doc" />
+    <None Include="7000\english notes at company.docx" />
+    <None Include="7000\voa notes%28begin at 2.23%29.docx" />
     <None Include="App.config" />
     <None Include="doc\An Introduction to CSS.docx" />
     <None Include="doc\aspmvc4 fundamental The ASP.NET WebAPI.docx" />

@@ -22,6 +22,14 @@ namespace WpfApplication1
         public WindowCursor()
         {
             InitializeComponent();
+            string fromat=@"HH\:mm\:ss\.ff";
+            string str = DateTime.Now.ToString(fromat);
+            string ddd = str;
+
+            DateTime dtOld = DateTime.Now.AddHours(-15);
+
+            string NowString = (DateTime.Now - dtOld).ToString(@"hh\:mm\:ss\.ff");
+            ddd = NowString;
 
         }
 

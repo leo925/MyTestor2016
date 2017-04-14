@@ -1,6 +1,6 @@
 using System;
 
-namespace _3DBackendService.Areas.HelpPage.ModelDescriptions
+namespace BackendService.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterAnnotation
     {

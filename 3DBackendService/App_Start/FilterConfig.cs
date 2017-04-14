@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace _3DBackendService
+namespace BackendService
 {
     public class FilterConfig
     {

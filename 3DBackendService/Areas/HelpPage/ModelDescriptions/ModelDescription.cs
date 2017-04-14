@@ -1,6 +1,6 @@
 using System;
 
-namespace _3DBackendService.Areas.HelpPage.ModelDescriptions
+namespace BackendService.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

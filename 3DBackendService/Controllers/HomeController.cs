@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace _3DBackendService.Controllers
+namespace BackendService.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using _3DBackendService.Areas.HelpPage.ModelDescriptions;
-using _3DBackendService.Areas.HelpPage.Models;
+using BackendService.Areas.HelpPage.ModelDescriptions;
+using BackendService.Areas.HelpPage.Models;
 
-namespace _3DBackendService.Areas.HelpPage.Controllers
+namespace BackendService.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

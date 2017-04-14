@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using _3DBackendService.Areas.HelpPage.ModelDescriptions;
-using _3DBackendService.Areas.HelpPage.Models;
+using BackendService.Areas.HelpPage.ModelDescriptions;
+using BackendService.Areas.HelpPage.Models;
 
-namespace _3DBackendService.Areas.HelpPage
+namespace BackendService.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

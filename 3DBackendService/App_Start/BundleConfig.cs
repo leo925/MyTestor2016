@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace _3DBackendService
+namespace BackendService
 {
     public class BundleConfig
     {

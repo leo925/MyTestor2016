@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using _3DBackendService.Areas.HelpPage.ModelDescriptions;
+using BackendService.Areas.HelpPage.ModelDescriptions;
 
-namespace _3DBackendService.Areas.HelpPage
+namespace BackendService.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

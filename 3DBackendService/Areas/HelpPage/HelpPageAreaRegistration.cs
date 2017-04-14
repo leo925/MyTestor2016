@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace _3DBackendService.Areas.HelpPage
+namespace BackendService.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {
